@@ -22,8 +22,10 @@ module RubyCritic
         if modules
           analysed_module = modules.find { |mod| mod.pathname == pathname }
           build_analysed_module(analysed_module)
+          puts("unicornnnn", paths,analysed_module)
         else
           AnalysedModule.new(pathname: pathname)
+          puts("omg i swear to god", paths,pathname)
         end
       end
     end
